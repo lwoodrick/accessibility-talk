@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/gaslight.css" id="theme">
+		<link rel="stylesheet" href="css/theme/lauren.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/tomorrow-night-bright.css">
@@ -40,11 +40,11 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="dark" >
-					<h1 class="white">Gaslight Deck</h1>
-					<h3 class="white">Made with Reveal.js</h3>
+				<section data-background="dark">
+					<h1>Style Yo' Deck!</h1>
+					<h3>On-brand zazz for your slide deck</h3>
 					<p class="speaker-block">
-						<small><a href="#">Speaker Name</a> | <a href="http://twitter.com/#">@twitter_handle</a></small>
+						<small><a href="#">Lauren Woodrick</a> | <a href="http://twitter.com/#">@LoremIpsam</a></small>
 					</p>
 					<div class="logo-block"></div>
 					<p>
@@ -53,132 +53,93 @@
 				</section>
 
 				<section data-background="title">
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
+					<h2>Topics:</h2>
+					<ul style="list-style-type: none;">
+						<li><b class="red">Q:</b> How do I write this baby in Markdown?</li>
+						<li><b class="red">Q:</b> How do I pick what background I use?</li>
+						<li><b class="red">Q:</b> Can I colorify text for emphasis?</li>
+						<li><b class="red">Q:</b> How do I add zazzy code bits?</li>
+						<li><b class="red">Q:</b> What hotkeys do I have at my disposal?</li>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
+					</ul>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						## Markdown support
+						## Q: How do I write this baby in Markdown?
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+						**A:** Drop <code>data-markdown</code> into your <code>&lt;section&gt;</code> tag as an attribute, and you'll be good to go.
 
-						```
+						```html
 						<section data-markdown>
-						  ## Markdown support
+							## Q: How do I write this baby in Markdown?
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+							**A:** Drop <code>data-markdown</code> into your
+							<code>&lt;section&gt;</code> tag as an attribute,
+							and you'll be good to go.
 						</section>
 						```
 					</script>
 				</section>
 
 				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment fade-up">fade-up (also down, left and right!)</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
-					</section>
+					<h2>Q: How do I pick what background I use?</h2>
+					<p>
+					 <b>A:</b> Drop the following attributes into <code>&lt;section&gt;</code> based on your needs.
+				 </p>
+					 <pre><code class="html" data-trim contenteditable>&lt;section data-background="title"&gt; <!-- Gives you a slide with happy whirligigs -->
+&lt;section data-background="dark"&gt; <!-- Gives you a slide with a dark background -->
+					 </code></pre>
+					 <p>
+					 	A white slide with the Gaslight tricolor is the default.
+					 </p>
 				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
+				<section>
+					<h2>Q: Can I colorify text for emphasis?</h2>
 					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
+					 <b>A:</b> But of course! Just apply the classes <strong class="blue">blue</strong>,
+					  <strong class="red">red</strong>, and <strong class="yellow">yellow</strong> to your <code>&lt;span&gt;</code>
+						and <code>&lt;strong&gt;</code> tags.
+				 </p>
+
 				</section>
 
-				<section id="themes">
-					<h2>Themes</h2>
+				<section>
+					<h2>Q: How do I add code bits?</h2>
 					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
+					 <b>A:</b> Standard: Wrap it all in <code>&lt;pre&gt;</code> <code>&lt;code&gt;</code> tags,
+					 then add <a href="http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html">the language you're using</a> as a class to <code>&lt;code&gt;</code>
+					 and maybe apply <code>contenteditable</code> as an attribute if that's your jam.
+				 </p>
+				 <pre><code class="html" data-trim contenteditable>&lt;pre&gt;&lt;code class="js" contenteditable&gt; <!-- makes for... --></code></pre>
+				 <pre><code class="js" contenteditable>function linkify( selector ) {
+   if( supports3DTransforms ) {
+
+     var nodes = document.querySelectorAll( selector );
+
+     for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+       var node = nodes[i];
+
+       if( !node.className ) {
+         node.className += ' roll';
+       }
+     }
+   }
+ }</code></pre>
+				</section>
+
+				<section>
+					<h2>Q: What hotkeys are there?</h2>
+					<p>
+					 <b>A:</b> Drop the following attributes into <code>&lt;section&gt;</code> based on your needs.
+				 </p>
+					 <pre><code class="html" data-trim contenteditable>&lt;section data-background="title"&gt; <!-- Gives you a slide with happy whirligigs -->
+&lt;section data-background="dark"&gt; <!-- Gives you a slide with a dark background -->
+					 </code></pre>
+					 <p>
+					 	A white slide with the Gaslight tricolor is the default.
+					 </p>
 				</section>
 
 				<section>

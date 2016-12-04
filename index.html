@@ -4,13 +4,17 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Accessibility: Tips and Tricks for a Friendlier Web</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/lauren.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Font Action -->
+
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -24,8 +28,378 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+<!-- SLIDE 1: Opening Slide -->
+				<section>
+					<h1>Accessibility <span class="small">The Crafting of a Friendlier and More Considerate Web</span></h1>
+					<div class="speaker-block">
+						Lauren Woodrick <br/>
+						(Insert Social Media Nonsense Here)
+					</div>
+				</section>
+<!-- SLIDE 2: Opening Statement -->
+				<section>
+					<h2>[Opening Statement]</h2>
+					<aside class="notes">
+						Cover the proliferation of the web and how sicknasty things have
+						become, but state that people gotta be attended to. List groups that
+						need to be considered/have been easily neglected in current developments
+						(people with low-vision, deaf/hard of hearing folks, dyslexia, motor-disabled
+						folks, people on the autism spectrum, folks without access to a good connection?)
+					</aside>
+				</section>
+<!-- SLIDE 3: Sequence of topics -->
+				<section>
+					<h2>What We'll Cover</h2>
+					<ul>
+						<li>WCAG 2.0</li>
+						<li>Accessibility Considerations Throughout Our Process
+							<ul>
+								<li>Design</li>
+								<li>Front-End Development</li>
+								<li>Testing</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+<!-- SLIDE 4: SECTION START: WCAG 2.0 -->
+				<section>
+					<h1>The Standards</h1>
+				</section>
+<!-- SLIDE 5: About WCAG 2.0 -->
+<section>
+	<h1>WCAG 2.0</h1>
+	<p><a href="https://www.w3.org/TR/WCAG20/" target="_blank">WCAG 2.0</a> is the second iteration of the standards written by the W3C to
+		 capture the functional parameters for what makes a website accessible.
+	</p>
+	<aside class="notes">
+		While different sets of standards can exist across different national entities,
+		the W3C, everyone's favorite standards writers, have assembled the Web Content
+		Accessibility Guidlines, or WCAG. It's a collection of website qualities that
+		ensure that your websites are usable and intelligible for folks regardless of
+		what impairments they may or may not have.
+	</aside>
+</section>
+<!-- SLIDE 6: What are the Standards? -->
+				<section>
+					<h2>What are the standards?</h2>
+					<p>The overarching goal is to make sure that your pages are</p>
+					<ul>
+						<li>Perceivable</li>
+						<li>Operable</li>
+						<li>Understandable</li>
+						<li>Robust</li>
+					</ul>
+
+					<aside class="notes">
+						...
+						In a nutshell, the goals are to ensure your site is perceivable —
+						users must be able to perceive the information in some way — operable
+						— all users must be able to operate the interface — understandable —
+						users must be able to understand the information — and robust, being
+						that the site can be used using accessed with a large number of user
+						agents and future-proofed for the same.
+					</aside>
+				</section>
+<!-- SLIDE 7: What are the Standards? -->
+				<section>
+					<p>The success criteria are then broken up across these four categories.</p>
+					<p></p>
+					<aside class="notes">
+						The success criteria are then broken up across these four categories,
+						which are fine for groking the goals at a top level, but doesn't group
+						them in a way that's easy to work into a project's lifecycle, so I went ahead and
+						took a crack at it. Specific guidelines and references will be included throughout
+						for later reference.
+					</aside>
+				</section>
+
+				<!-- TODO: EVERYTHING PAST THIS POINT IS JUST SLIDE PLACEMENT -->
+
+<!-- SLIDE 8: DESIGN PHASE -->
+				<section>
+					<h1>The Design Phase</h1>
+					<aside class="notes">
+						<!-- TODO: A little bit of a transition into the design section -->
+					</aside>
+				</section>
+<!-- SLIDE 10: DESIGN PHASE: Typography: Leading, Spacing, Size -->
+			<section>
+				<h2>The Design Phase: Typeface</h2>
+				<p>
+					<img class="fragment" src="assets/images/russian_cursive.jpg" alt="Illegible Sample of Russian Cursive">
+				</p>
+			</section>
+			<section>
+				<h2>The Design Phase: Typeface</h2>
+				<p>Maximize readability for folks with low-vision and dyslexia by choosing a typeface with...</p>
+				<ul>
+					<li>Longer ascenders and descenders to make different letterforms more distinct.</li>
+					<li>No ornamentation that obscures the letterforms.</li>
+					<li>Letterforms that are distinct from others that are formed in a similar way.</li>
+				</ul>
+			</section>
+			<section>
+				<h2>The Design Phase: Type Size</h2>
+				<p>
+					Embrace the relative! Set font-size, padding, and margin to relative
+					units (rem, em, ch) to make it possible to zoom gracefully!
+					 <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html">(View WCAG SC 1.4.4)</a>
+				</p>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+					Now that there are a variety of devices with varying pixel densities to
+					consider, font-size can seem peskier than ever, but so long as you make
+					sure to use relative units when setting your font-size, padding, and margin,
+					your page will not look miserable when zooming out.
+				</aside>
+			</section>
+
+			<section>
+				<h2>The Design Phase: Text</h2>
+				<ul>
+					<li>Keep fields of text aligned to the left.</li>
+					<li>For paragraphs, keep line-height: 1.5;</li>
+					<li>Bonus: Paragraphs between 45–75 characters long are most comfortable for reading, so keeping your paragraphs between that number of rem units is best.</li>
+				</ul>
+				<p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">(View WCAG SC 1.4.8)</a></p>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+			<section>
+				<h2>The Design Phase: Textual Links</h2>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 11: DESIGN PHASE: Color -->
+			<section>
+				<h2>The Design Phase: Color</h2>
+				<p>
+					When using color for text, be sure that the contrast ratio between the
+					background and text is at least 4.5 for all text and at least 3 for text
+					that's above 14pt and bold or above 18pt in size. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">(View WCAG SC 1.4.3)</a>
+				</p>
+				<p></p>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 12: DESIGN PHASE: Images: Raster Images -->
+			<section>
+				<h2>The Design Phase: Images <!-- Alt Text --></h2>
+				<p>If there's alt text, it <b>will</b> be read by screen readers.</p>
+				<p class="fragment">
+					<img src="assets/images/confused_man.jpg" alt="Man confused by excessive description that breaks context.">
+				</p>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+			<section>
+				<h2>The Design Phase: Images <!-- Alt Text --></h2>
+				<p>If there's alt text, it <b>will</b> be read by screen readers.</p>
+				<ul>
+					<li><b class="blue">INCLUDE</b> when the image is a substitute for text</li>
+					<li><b class="blue">INCLUDE</b> when a description of the image provides additional information</li>
+					<li><b class="red">OMIT</b> when the image only reinforces existing text.</li>
+				</ul>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+			<section>
+				<h2>The Design Phase: Images <!-- Optimization --></h2>
+				<p>What if connection speeds are dismal? What if your users are choosing to spend their mobile data on your site/app?</p>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+			<section>
+				<h2>The Design Phase: Images <!-- Optimization --></h2>
+				<ul>
+					<li>Compress your raster images! <a href="https://imageoptim.com">ImageOptim</a> or <a href="https://compressor.io/">Compressor.io</a> can be handy here.</li>
+					<li>Selectively load images based on the device being used.</li>
+					<li>Use SVG where possible for iconography for small file sizes.</li>
+				</ul>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 13: DESIGN PHASE: Icons -->
+			<section>
+				<h2>The Design Phase: Iconography</h2>
+				<p></p>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 14: DESIGN PHASE: Composition -->
+			<section>
+				<h2>The Design Phase: Composition</h2>
+				<p>There's no need to reinvent the wheel!</p>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+					- Don't disable zoom! Use fixed-positioned items with caution because
+					they can easily obscure content in the case where content it zoomed in.
+					(Include eye test meme?)
+				</aside>
+			</section>
+<!-- SLIDE 15: DEVELOPMENT PHASE -->
+			<section>
+				<h1>The Development Phase</h1>
+			</section>
+<!-- SLIDE 16: DEVELOPMENT PHASE: Head First -->
+			<section>
+				<h1>The Development Phase: Head First</h1>
+				<p>Well, sort of.</p>
+				<ul>
+					<li>Make sure you use the lang attribute in your html tag for proper reading and text rendering. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html">(View WGAC SC 3.1.1)</a><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html"></a>(View WGAC SC 3.1.2)</li>
+					<li>Use critical path CSS to prevent any background-images from causing load havoc.</li>
+
+				</ul>
+				<aside class="notes">
+					- Note that you can use them for other elements that switch languages
+					midstream. Difference between "Yo hab-luh espanole" and "Yo habla español"
+					- Structuring your styles and scripts to load in a critical path fashion.
+				</aside>
+			</section>
+<!-- SLIDE 17: DEVELOPMENT PHASE: Markup Order -->
+			<section>
+				<h2>The Development Phase: Markup Order</h2>
+				<p>As your design looks from the top down, so should your markup look. This ensures assistive technologies and keyboard users will be able to digest and navigate information in the same sequence as other users.</p>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 18: DEVELOPMENT PHASE: Keeping Things Semantic -->
+			<section>
+				<h2>The Development Phase: Keeping Things Semantic</h2>
+				<p>When possible, use semantically appropriate HTML tags for your content. HTML 5 does us a favor by offering us plenty to choose from.</p>
+				<aside class="notes">
+					- When possible, use semantically appropriate HTML tags for your content. This allows assistive technologies to be able to handle elements in the correct fashion without having to attach a myriad of aria attributes to an element and also to navigate properly within a webpage.
+				</aside>
+			</section>
+<!-- SLIDE 19: DEVELOPMENT PHASE: Keeping Things Semantic // Headers -->
+			<section>
+				<h2>The Development Phase: Semantic Headers</h2>
+				<p>Conveniently, <code class="hljs">&lt;header&gt;</code> tags are for headers.</p>
+				<p>Attach the attribute of <code class="hljs">role="banner"</code> to your primary header.</p>
+				<aside class="notes">
+					Conveniently, your header content is placed between header tags. And while it's possible to create confusion for yourself by having multiple headers in your markup, the role of banner plays by Highlander rules, which is to say, there can only be one.
+				</aside>
+			</section>
+<!-- SLIDE 18: DEVELOPMENT PHASE: Keeping Things Semantic // Navigation -->
+			<section>
+				<h2>The Development Phase: Semantic Navigation</h2>
+				<p>Just like the with header, there are handy <code class="hljs">&lt;nav&gt;</code> tags to serve this purpose.</p>
+				<p>Attach the attribute of <code class="hljs">role="navigation"</code> for navigational, but non-<code class="hljs">&lt;nav&gt;</code> elements.</p>
+				<p class="fragment">Use the WAI-ARIA attribute of <code class="hljs">aria-label</code> or reference a navigational area's header with <code class="hljs">aria-labelledby</code> to make its purpose clear</p>
+				<aside class="notes">
+					Just like with the header, there are handy nav tags that serve the purpose of marking your navigational area for you.
+					In cases where a page element serves a navigational purpose but isn't the primary navigation, you can use the role of navigation to it, which will flag it and announce it as such for screenreaders. For even better clarity, you can attach aria-label or aria-labelledby to your nav sections, which will ensure that screenreaders call out what you're looking at accordingly (for Wikipedia, these labels could result in two navigations being "Site Navigation" and "Article Contents")
+				</aside>
+			</section>
+			<section>
+				<h2>The Development Phase: Semantic Navigation</h2>
+				<p>When utilizing dropdown or slide-out navigation</p>
+				<aside class="notes">
+					For times when you absolutely must use drop-down/slide-out navigation, 
+				</aside>
+			</section>
+<!-- SLIDE 19: DEVELOPMENT PHASE: Keeping Things Semantic // Main-->
+			<section>
+				<h2>The Development Phase: Main</h2>
+				<p>Use the <code class="hljs">&lt;main&gt;</code> tags for your primary content area, as well as the <code class="hljs">role="main"</code> landmark as an attribute.</p>
+				<p>When linking down a page, add <code class="hljs">tabindex="-1"</code> as an attribute to sections targeted by links to allow the focus area to jump accordingly.</p>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+			<section>
+				<h2>The Development Phase: Headers</h2>
+				<p><b class="red">DO NOT</b> use header tags out of order, as this can cause navigational issues with screen readers.</p>
+			</section>
+<!-- SLIDE 20: DEVELOPMENT PHASE: Keeping Things Semantic // Footer -->
+			<section>
+				<h2>The Development Phase: Semantic Footer</h2>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 21: DEVELOPMENT PHASE: WAI-ARIA/Communicating State -->
+			<section>
+				<h2>The Development Phase: Communicating State</h2>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 22: DEVELOPMENT PHASE: Speaking to Screenreaders -->
+			<section>
+				<h2>The Development Phase: Speaking to Screenreaders</h2>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 23: DEVELOPMENT PHASE: Speaking to Screenreaders (Text that's only screenread) -->
+			<section>
+				<h2>The Development Phase: Screenreaders and "Secret" Text</h2>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 24: DEVELOPMENT PHASE: Helping Keyboard Users -->
+			<section>
+				<h2>The Development Phase: Making Keyboard Use Painless</h2>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 25: DEVELOPMENT PHASE: Helping Keyboard Users // Skipping the Nav -->
+			<section>
+				<h2>The Development Phase: Making Keyboard Use Painless</h2>
+				<h3>Skipping the Nav</h3>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 26: DEVELOPMENT PHASE: Helping Keyboard Users // Not getting caught in collapsed menus -->
+			<section>
+				<h2>The Development Phase: Making Keyboard Use Painless</h2>
+				<h3>Avoiding Phantom Focus</h3>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 27: DEVELOPMENT PHASE: Loading Your Assets -->
+			<section>
+				<h2>The Development Phase: Asset Loading</h2>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 28: Wrap Up // Additional Tools and Resources -->
+			<section>
+				<h2>Additional Tools &amp; Resources</h2>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+<!-- SLIDE 29: Questions? -->
+		<section>
+			<h1>Questions?</h1>
+			<aside class="notes">
+				<!-- TODO: Add copy, notes -->
+			</aside>
+		</section>
+<!-- SLIDE 30: Thanks/Closing -->
+		<section>
+			<h1>Thank you!</h1>
+			<div class="speaker-block">
+				Lauren Woodrick <br/>
+				(Insert Social Media Nonsense Here)
+			</div>
+		</section>
 			</div>
 		</div>
 
