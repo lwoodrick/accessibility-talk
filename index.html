@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/theme/lauren.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/css/monokai-sublime.css">
 
 		<!-- Font Action -->
 
@@ -32,13 +32,25 @@
 				<section>
 					<h1>Accessibility <span class="small">The Crafting of a Friendlier and More Considerate Web</span></h1>
 					<div class="speaker-block">
-						Lauren Woodrick <br/>
-						(Insert Social Media Nonsense Here)
+						<p style="text-align: center; margin-top: 4.5rem; font-size: 1.25em">Lauren Woodrick</p>
+						<p style="text-align: center; overflow: hidden;">
+						<span style="overflow: hidden; display: inline-block;">
+							<span style="width: 50px; display: block; float: left; padding-top: 0.125em; margin-right: 0.25em;">
+								<svg xmlns="http://www.w3.org/2000/svg" style="width:100%" viewBox="0 0 100 100"><path fill="#666" d="M93.7 52.1c0 33.7-27.8 34-35 34-1.5 0-4.7.2-8 .2s-6.5-.2-8-.2c-7.1 0-35-.4-35-34 0-7.7 2.6-13.5 6.9-18.1-.6-1.7-.6-11.4 3-20.6 0 0 8.6.9 21.3 9.7 2.8-.7 7.3-1.1 11.8-1.1s9.2.4 11.8 1.1c12.9-8.8 21.3-9.7 21.3-9.7 3.7 9.2 3.5 18.9 3 20.6 4.3 4.6 6.9 10.4 6.9 18.1zM82.3 62.9c0-4.1-1.5-8-5-11.2-5.6-5.2-15.3-2.4-26.4-2.4h-.4c-11 0-20.6-2.8-26.4 2.4-3.6 3.2-4.9 7.1-4.9 11.2C19.3 79.9 33 82 50.6 82h.4c17.5 0 31.3-2.1 31.3-19.1zM42 64.2c0 4.7-2.6 8.4-6 8.4s-6.2-3.7-6.2-8.4 2.8-8.4 6.2-8.4c3.3 0 6 3.7 6 8.4zm29.7 0c0 4.7-2.6 8.4-6 8.4s-6.2-3.7-6.2-8.4 2.8-8.4 6.2-8.4c3.4 0 6 3.7 6 8.4z"/></svg>
+							</span> <span style="display: block; float: left;">lwoodrick</span> <span style="display: block; float: left; margin-left: 0.5em; margin-right: 0.5em;">|</span>
+							<span style="width: 50px; display: block; float: left; padding-top: 0.125em; margin-right: 0.25em;">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="#666" d="M85.9 32.2v2.3c0 24.3-18.5 52.2-52.2 52.2-10.5 0-20-2.9-28.2-8.2 1.4.2 2.9.2 4.5.2 8.6 0 16.5-2.9 22.8-7.8-8-.2-14.8-5.4-17.1-12.8 1 .4 2.1.4 3.3.4 1.8 0 3.3-.2 4.9-.6-8.4-1.8-14.6-9.2-14.6-18.1v-.2c2.3 1.4 5.3 2.1 8.2 2.3-4.9-3.3-8.2-9-8.2-15.4 0-3.3 1-6.4 2.5-9.1 9.2 11.1 22.6 18.5 38 19.1-.4-1.2-.6-2.7-.6-4.1 0-10.1 8.2-18.3 18.5-18.3 5.3 0 9.9 2.1 13.2 5.6 4.3-.8 8.2-2.3 11.7-4.3-1.4 4.3-4.3 7.8-8 10.1 3.7-.6 7.2-1.6 10.5-2.9-2.5 3.8-5.6 6.9-9.2 9.6z"/></svg>
+							</span> <span style="display: block; float: left;">LoremIpsam</span>
+					</span>
+</p>
+
+
+
 					</div>
 				</section>
 <!-- SLIDE 2: Opening Statement -->
 				<section>
-					<h2>[Opening Statement]</h2>
+					<h2>Why It Matters</h2>
 					<aside class="notes">
 						Cover the proliferation of the web and how sicknasty things have
 						become, but state that people gotta be attended to. List groups that
@@ -51,12 +63,12 @@
 				<section>
 					<h2>What We'll Cover</h2>
 					<ul>
-						<li>WCAG 2.0</li>
-						<li>Accessibility Considerations Throughout Our Process
+						<li>The Standards</li>
+						<li>Accessibility Considerations Throughout A Project
 							<ul>
-								<li>Design</li>
-								<li>Front-End Development</li>
-								<li>Testing</li>
+								<li><strong>Design</strong>: Text and Graphical Elements</li>
+								<li><strong>Development</strong>: Components and Attributes</li>
+								<li><strong>Testing</strong>: Tools and Resources</li>
 							</ul>
 						</li>
 					</ul>
@@ -67,9 +79,9 @@
 				</section>
 <!-- SLIDE 5: About WCAG 2.0 -->
 <section>
-	<h1>WCAG 2.0</h1>
+	<h2>WCAG 2.0</h2>
 	<p><a href="https://www.w3.org/TR/WCAG20/" target="_blank">WCAG 2.0</a> is the second iteration of the standards written by the W3C to
-		 capture the functional parameters for what makes a website accessible.
+		 outline elements of structure that make websites accessible.
 	</p>
 	<aside class="notes">
 		While different sets of standards can exist across different national entities,
@@ -83,7 +95,7 @@
 				<section>
 					<h2>What are the standards?</h2>
 					<p>The overarching goal is to make sure that your pages are</p>
-					<ul>
+					<ul style="width: 100%;">
 						<li>Perceivable</li>
 						<li>Operable</li>
 						<li>Understandable</li>
@@ -98,13 +110,7 @@
 						users must be able to understand the information — and robust, being
 						that the site can be used using accessed with a large number of user
 						agents and future-proofed for the same.
-					</aside>
-				</section>
-<!-- SLIDE 7: What are the Standards? -->
-				<section>
-					<p>The success criteria are then broken up across these four categories.</p>
-					<p></p>
-					<aside class="notes">
+
 						The success criteria are then broken up across these four categories,
 						which are fine for groking the goals at a top level, but doesn't group
 						them in a way that's easy to work into a project's lifecycle, so I went ahead and
@@ -112,8 +118,6 @@
 						for later reference.
 					</aside>
 				</section>
-
-				<!-- TODO: EVERYTHING PAST THIS POINT IS JUST SLIDE PLACEMENT -->
 
 <!-- SLIDE 8: DESIGN PHASE -->
 				<section>
@@ -124,13 +128,13 @@
 				</section>
 <!-- SLIDE 10: DESIGN PHASE: Typography: Leading, Spacing, Size -->
 			<section>
-				<h2>The Design Phase: Typeface</h2>
+				<h2>Design: Typeface</h2>
 				<p>
 					<img class="fragment" src="assets/images/russian_cursive.jpg" alt="Illegible Sample of Russian Cursive">
 				</p>
 			</section>
 			<section>
-				<h2>The Design Phase: Typeface</h2>
+				<h2>Design: Typeface</h2>
 				<p>Maximize readability for folks with low-vision and dyslexia by choosing a typeface with...</p>
 				<ul>
 					<li>Longer ascenders and descenders to make different letterforms more distinct.</li>
@@ -139,7 +143,7 @@
 				</ul>
 			</section>
 			<section>
-				<h2>The Design Phase: Type Size</h2>
+				<h2>Design: Type Size</h2>
 				<p>
 					Embrace the relative! Set font-size, padding, and margin to relative
 					units (rem, em, ch) to make it possible to zoom gracefully!
@@ -155,10 +159,10 @@
 			</section>
 
 			<section>
-				<h2>The Design Phase: Text</h2>
+				<h2>Design: Text</h2>
 				<ul>
 					<li>Keep fields of text aligned to the left.</li>
-					<li>For paragraphs, keep line-height: 1.5;</li>
+					<li>For paragraphs, keep <code class="hljs">line-height: 1.5;</code></li>
 					<li>Bonus: Paragraphs between 45–75 characters long are most comfortable for reading, so keeping your paragraphs between that number of rem units is best.</li>
 				</ul>
 				<p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">(View WCAG SC 1.4.8)</a></p>
@@ -167,27 +171,67 @@
 				</aside>
 			</section>
 			<section>
-				<h2>The Design Phase: Textual Links</h2>
+				<h2>Design: Textual Links</h2>
+				<p>When possible, make it explicit what kind of content a link links to reduce cognitive load on the user. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html" target="_blank">(View WCAG SC 2.4.9)</a></p>
+				<p class="fragment">If for some reason, it can't be done, that's fine &mdash; so long as all users are left with a sense of mystery, this criteria still counts as passed.</p>
+			</section>
+			<section>
+				<h2>Design: Textual Links</h2>
+				<ul>
+					<li>At the very least, make it clear where a given link might be sending a user based on context. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">(View WCAG SC 2.4.4)</a></li>
+					<li>To make this easier for assistive technologies, use the <code class="hljs">aria-label</code> attribute to provide more information about where a link might take you or point at information that does describe a link using <code class="hljs">aria-labelledby</code></li>
+				</ul>
 				<aside class="notes">
 					<!-- TODO: Add copy, notes -->
 				</aside>
 			</section>
 <!-- SLIDE 11: DESIGN PHASE: Color -->
 			<section>
-				<h2>The Design Phase: Color</h2>
+				<h2>Design: Color</h2>
 				<p>
 					When using color for text, be sure that the contrast ratio between the
 					background and text is at least 4.5 for all text and at least 3 for text
-					that's above 14pt and bold or above 18pt in size. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">(View WCAG SC 1.4.3)</a>
+					that's above 14pt and bold or above 18pt in size. This should guarantee readability for users with 20/40 vision <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">(View WCAG SC 1.4.3)</a>
 				</p>
-				<p></p>
 				<aside class="notes">
-					<!-- TODO: Add copy, notes -->
+					- 20/40 vision is around the average visual acuity for people around the age of 80.
 				</aside>
+			</section>
+			<section>
+				<h2>Design: Color</h2>
+				<p>
+					To take it to the next level and be a hero to people with 20/80 vision, you can use a contrast ratio of 7 for your target, which should also resolve any readability issues for folks with varying forms of colorblindness. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html" target="blank">(View WCAG SC 1.4.6)</a>
+				</p>
+			</section>
+			<section>
+				<section>
+					<h2>Design: Color</h2>
+					<p>Any information imparted by charts or graphs by the use of color should be made available in another way for folks with varying types of colorblindness.<a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">(View WCAG 1.4.1)</a>
+					</p>
+				</section>
+				<section>
+					<h2>Design: Color</h2>
+					<p>Here's a nice example in the wild for how Trello accommodates for colorblindness in its card labels.</p>
+					<div>
+						<div class='float: left;'>
+						<img style="max-height: 380px; margin-right: 2%;" src="assets/images/trello_colorblindoff.png" alt="Regular Labels with Deuteronopia">
+						</div>
+						<div class='float: left;'>
+						<img style="max-height: 380px;" src="assets/images/trello_colorblindon.png" alt="Colorblindness-Friendly Labels with Deuteronopia">
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>Design: Color</h2>
+					<ul>
+						<li><a href="http://leaverou.github.io/contrast-ratio/" target="_blank">Contrast-Ratio</a>A handy tool for spot-testing text and background contrast.</li>
+						<li><a href="http://www.colororacle.org/" target="_blank">Color Oracle</a>: A desktop plugin to simulate different types of colorblindness.</li>
+					</ul>
+				</section>
 			</section>
 <!-- SLIDE 12: DESIGN PHASE: Images: Raster Images -->
 			<section>
-				<h2>The Design Phase: Images <!-- Alt Text --></h2>
+				<h2>Design: Images <!-- Alt Text --></h2>
 				<p>If there's alt text, it <b>will</b> be read by screen readers.</p>
 				<p class="fragment">
 					<img src="assets/images/confused_man.jpg" alt="Man confused by excessive description that breaks context.">
@@ -197,9 +241,9 @@
 				</aside>
 			</section>
 			<section>
-				<h2>The Design Phase: Images <!-- Alt Text --></h2>
-				<p>If there's alt text, it <b>will</b> be read by screen readers.</p>
-				<ul>
+				<h2>Design: Images <!-- Alt Text --></h2>
+				<p>If there's <code class="hljs">alt</code> text, it <b>will</b> be read by screen readers.</p>
+				<ul style="list-style-type: none; margin-left: 0;">
 					<li><b class="blue">INCLUDE</b> when the image is a substitute for text</li>
 					<li><b class="blue">INCLUDE</b> when a description of the image provides additional information</li>
 					<li><b class="red">OMIT</b> when the image only reinforces existing text.</li>
@@ -209,14 +253,14 @@
 				</aside>
 			</section>
 			<section>
-				<h2>The Design Phase: Images <!-- Optimization --></h2>
+				<h2>Design: Images <!-- Optimization --></h2>
 				<p>What if connection speeds are dismal? What if your users are choosing to spend their mobile data on your site/app?</p>
 				<aside class="notes">
 					<!-- TODO: Add copy, notes -->
 				</aside>
 			</section>
 			<section>
-				<h2>The Design Phase: Images <!-- Optimization --></h2>
+				<h2>Design: Images <!-- Optimization --></h2>
 				<ul>
 					<li>Compress your raster images! <a href="https://imageoptim.com">ImageOptim</a> or <a href="https://compressor.io/">Compressor.io</a> can be handy here.</li>
 					<li>Selectively load images based on the device being used.</li>
@@ -226,23 +270,14 @@
 					<!-- TODO: Add copy, notes -->
 				</aside>
 			</section>
-<!-- SLIDE 13: DESIGN PHASE: Icons -->
+<!-- DESIGN: IMAGES OF TEXT -->
 			<section>
-				<h2>The Design Phase: Iconography</h2>
-				<p></p>
+				<h2>Design: Images of Text</h2>
+				<ul>
+					<li>Logos are permissible when augmented with <code class="hljs">alt</code> text, but any other manifestations of image-based text should be strictly decorative. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html">(View WGAC SC 1.4.5)</a> <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html" target="_blank">(View WGAC SC 1.4.9)</a></li>
+					<li>Believe in yourself! You don't need an image for that type treatment! <a href="http://chad.is/beautiful-web-type/" target="_blank">View some sweet typographic samples</a> for inspiration.</li>
 				<aside class="notes">
-					<!-- TODO: Add copy, notes -->
-				</aside>
-			</section>
-<!-- SLIDE 14: DESIGN PHASE: Composition -->
-			<section>
-				<h2>The Design Phase: Composition</h2>
-				<p>There's no need to reinvent the wheel!</p>
-				<aside class="notes">
-					<!-- TODO: Add copy, notes -->
-					- Don't disable zoom! Use fixed-positioned items with caution because
-					they can easily obscure content in the case where content it zoomed in.
-					(Include eye test meme?)
+					You might ask yourself, "But what if I have an image that's of text? What then?" Unless it's a logotype, get it out of there! You are one slow network or loading failure away from your site being difficult from anyone to operate or depriving them of information. CSS is also powerful enough to make the dream work for everyone by making it possible to lay in custom typefaces or resize them without deferring to image use.
 				</aside>
 			</section>
 <!-- SLIDE 15: DEVELOPMENT PHASE -->
@@ -251,11 +286,12 @@
 			</section>
 <!-- SLIDE 16: DEVELOPMENT PHASE: Head First -->
 			<section>
-				<h1>The Development Phase: Head First</h1>
-				<p>Well, sort of.</p>
+				<h2>Development: Head First</h2>
 				<ul>
 					<li>Make sure you use the lang attribute in your html tag for proper reading and text rendering. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html">(View WGAC SC 3.1.1)</a><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html"></a>(View WGAC SC 3.1.2)</li>
+					<li>Use <code class="hljs">&lt;title&gt;</code> tags that describe the content at a glance. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html" target="_blank">(View WCAG SC 2.4.2)</a></li>
 					<li>Use critical path CSS to prevent any background-images from causing load havoc.</li>
+					<li>FOUT (Flash of Unstyled Text) is superior to FOIT (Flash of Invisible Text)</li>
 
 				</ul>
 				<aside class="notes">
@@ -266,24 +302,24 @@
 			</section>
 <!-- SLIDE 17: DEVELOPMENT PHASE: Markup Order -->
 			<section>
-				<h2>The Development Phase: Markup Order</h2>
-				<p>As your design looks from the top down, so should your markup look. This ensures assistive technologies and keyboard users will be able to digest and navigate information in the same sequence as other users.</p>
+				<h2>Development: Markup Order</h2>
+				<p>As your page reads from the top down, so should your markup. This ensures assistive technologies and keyboard users will be able to digest and navigate information in the same sequence as other users. <a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">(View WCAG SC 2.4.3)</a></p>
 				<aside class="notes">
 					<!-- TODO: Add copy, notes -->
 				</aside>
 			</section>
 <!-- SLIDE 18: DEVELOPMENT PHASE: Keeping Things Semantic -->
 			<section>
-				<h2>The Development Phase: Keeping Things Semantic</h2>
-				<p>When possible, use semantically appropriate HTML tags for your content. HTML 5 does us a favor by offering us plenty to choose from.</p>
+				<h2>Development: Keeping It Semantic</h2>
+				<p>When possible, use semantically-appropriate HTML tags for your content. HTML 5 does us a favor by offering us plenty to choose from.</p>
 				<aside class="notes">
 					- When possible, use semantically appropriate HTML tags for your content. This allows assistive technologies to be able to handle elements in the correct fashion without having to attach a myriad of aria attributes to an element and also to navigate properly within a webpage.
 				</aside>
 			</section>
 <!-- SLIDE 19: DEVELOPMENT PHASE: Keeping Things Semantic // Headers -->
 			<section>
-				<h2>The Development Phase: Semantic Headers</h2>
-				<p>Conveniently, <code class="hljs">&lt;header&gt;</code> tags are for headers.</p>
+				<h2>Development: Headers</h2>
+				<p>Conveniently, <code class="hljs">&lt;header&gt;</code> tags used to keep headers semantic.</p>
 				<p>Attach the attribute of <code class="hljs">role="banner"</code> to your primary header.</p>
 				<aside class="notes">
 					Conveniently, your header content is placed between header tags. And while it's possible to create confusion for yourself by having multiple headers in your markup, the role of banner plays by Highlander rules, which is to say, there can only be one.
@@ -291,7 +327,14 @@
 			</section>
 <!-- SLIDE 18: DEVELOPMENT PHASE: Keeping Things Semantic // Navigation -->
 			<section>
-				<h2>The Development Phase: Semantic Navigation</h2>
+				<h2>Development: Navigation</h2>
+				<ul>
+					<li>You don't have to reinvent the wheel &mdash; adhering to layout conventions common on the web allow you to piggyback on their existing familiarity.</li>
+					<li>Keep page navigation and controls in the same location as often as possible! This helps users familiarize themselves with the layout and anticipate where they'll find the content they seek in the future. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html">(View WCAG SC 3.2.3)</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Development: Navigation</h2>
 				<p>Just like the with header, there are handy <code class="hljs">&lt;nav&gt;</code> tags to serve this purpose.</p>
 				<p>Attach the attribute of <code class="hljs">role="navigation"</code> for navigational, but non-<code class="hljs">&lt;nav&gt;</code> elements.</p>
 				<p class="fragment">Use the WAI-ARIA attribute of <code class="hljs">aria-label</code> or reference a navigational area's header with <code class="hljs">aria-labelledby</code> to make its purpose clear</p>
@@ -301,15 +344,114 @@
 				</aside>
 			</section>
 			<section>
-				<h2>The Development Phase: Semantic Navigation</h2>
-				<p>When utilizing dropdown or slide-out navigation</p>
+				<h2>Development: Navigation</h2>
+				<p>Making search functionality available also provides a nice bump to accessibility, as well as providing opportunities to navigate across pages in normal flow outside of the main navigational fixtures. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html" target="_blank">(View WCAG SC 2.4.5)</a> </p>
+			</section>
+			<section>
+				<h2>Development: Navigation</h2>
+				<p>When possible, keep it clear where the user is currently located, whether providing a visual indicator within the site's navigation or providing breadcrumbs marking their path. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html" target="_blank">(View WCAG SC 2.4.8)</a>
+				</p>
+			</section>
+			<section>
+				<h2>Development: Navigation</h2>
+				<p>When utilizing dropdown or slide-out navigation, use role and aria attributes to prevent a complete readout of submenus and keep from "losing" focus. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html" target="_blank">(View WCAG SC 2.4.1)</a></p>
 				<aside class="notes">
-					For times when you absolutely must use drop-down/slide-out navigation, 
 				</aside>
+			</section>
+			<section>
+				<pre><code class="hljs">
+<nav class="menu" id="a11y-menu" role="navigation" aria-label="Main menu">
+
+  <ul class="nav level-1 list-reset" role="menubar" aria-hidden="false">
+    <li class="has-subnav" role="menuitem" aria-haspopup="true"> <!-- Signal to Assistive Tech that an element contains additional content -->
+      <a href="#about">About</a>
+      <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu">
+        <li role="menuitem"><a href="#news" tabindex="-1">News</a></li>
+        <li role="menuitem"><a href="#governance" tabindex="-1">Governance</a></li>
+        <li role="menuitem"><a href="#diversity" tabindex="-1">Diversity</a></li>
+        <li role="menuitem"><a href="#contact" tabindex="-1">ContactUs</a></li>
+      </ul>
+    </li>
+
+    <li role="menuitem" aria-haspopup="true">
+      <a href="#academics">Academics</a>
+      <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu" class="list-reset">
+        <li role="menuitem"><a href="#programs" tabindex="-1">Degree Programs</a></li>
+        <li role="menuitem"><a href="#faculty" tabindex="-1">Faculty</a></li>
+        <li role="menuitem"><a href="#distance" tabindex="-1">Distance Learning</a></li>
+        <li role="menuitem"><a href="#libs" tabindex="-1">Libraries</a></li>
+      </ul>
+    </li>
+
+    <li role="menuitem" aria-haspopup="true">
+      <a href="#admissions">Admissions</a>
+      <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu" class="list-reset">
+        <li role="menuitem"><a href="#undergraduate" tabindex="-1">Undergraduate</a></li>
+        <li role="menuitem"><a href="#tuition" tabindex="-1">Tuition</a></li>
+        <li role="menuitem"><a href="#financial-aid" tabindex="-1">Financial Aid</a></li>
+      </ul>
+    </li>
+
+    <li role="menuitem" aria-haspopup="true">
+      <a href="#visitors">Visitors</a>
+      <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu" class="list-reset">
+        <li role="menuitem"><a href="#events" tabindex="-1">Events</a></li>
+        <li role="menuitem"><a href="#campus-map" tabindex="-1">Campus Map</a></li>
+        <li role="menuitem"><a href="#parking" tabindex="-1">Parking</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></code></pre>
+			</section>
+			<section>
+				<h2>Development: Navigation</h2>
+				<p>Speaking of <code class="hljs">:focus</code>, leave that blue halo serving as a focus indicator alone unless you're replacing it with something else! <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html" target="_blank">(View WCAG SC 2.4.7)</a></p>
+				<aside class="notes">
+					This is the only way someone using a keyboard can keep their bearings as to where they are on a page, so do them a solid and leave it be!
+				</aside>
+			</section>
+			<section>
+				<h2>Development: Navigation</h2>
+				<p>To prevent a full read-out of navigation or forcing a keyboard user to tab through it again on a page load, provide a "Skip to Content Link" in your header before the <code class="hljs">&lt;nav&gt;</code> that's only visible to the user on <code class="hljs">:focus</code>.</p>
+				<aside class="notes">
+				</aside>
+			</section>
+			<section>
+				<pre><code class="hljs" contenteditable><style>
+#skip-to-content {
+  padding: 1em;
+  position: absolute;
+  top: -40px;
+  left: 1em;
+  z-index: 1000;
+  color: white;
+}
+
+#skip-to-content:focus {
+  position: absolute;
+  top: 0;
+  background: #4593ff;
+}
+
+</style>
+<header role="banner">
+
+  <a id="skip-to-content" href="#content">skip to main content</a>
+
+  <h1>Site Name</h1>
+
+  <nav role="navigation">
+    <a href="#">Link1</a>
+    <a href="#">Link2</a>
+    <a href="#">Link3</a>
+    <a href="#">Link4</a>
+  </nav>
+
+</header></code></pre>
 			</section>
 <!-- SLIDE 19: DEVELOPMENT PHASE: Keeping Things Semantic // Main-->
 			<section>
-				<h2>The Development Phase: Main</h2>
+				<h2>Development: Main</h2>
 				<p>Use the <code class="hljs">&lt;main&gt;</code> tags for your primary content area, as well as the <code class="hljs">role="main"</code> landmark as an attribute.</p>
 				<p>When linking down a page, add <code class="hljs">tabindex="-1"</code> as an attribute to sections targeted by links to allow the focus area to jump accordingly.</p>
 				<aside class="notes">
@@ -317,70 +459,71 @@
 				</aside>
 			</section>
 			<section>
-				<h2>The Development Phase: Headers</h2>
-				<p><b class="red">DO NOT</b> use header tags out of order, as this can cause navigational issues with screen readers.</p>
+				<h2>Development: Headings</h2>
+				<p>When content is broken into sections, be sure to make headings as descriptive of the content as possible and use them in sequence (i.e. h1..h6) to make content more digestable and navigable. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html" target="_blank">(View WCAG SC 2.4.10)</a></p>
 			</section>
-<!-- SLIDE 20: DEVELOPMENT PHASE: Keeping Things Semantic // Footer -->
 			<section>
-				<h2>The Development Phase: Semantic Footer</h2>
-				<aside class="notes">
-					<!-- TODO: Add copy, notes -->
-				</aside>
+				<h2>Development: Forms</h2>
+				<p>When constructing forms, be sure that all of your form fields have labels that they're associated to. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html" target="_blank">(View WCAG SC 2.4.6)</a></p>
+				<pre><code class="html"><label for="firstname">First name (required):</label>
+<input type="text" name="firstname" id="firstname" /></code></pre>
+			</section>
+			<section>
+				<h2>Development: Forms</h2>
+				<p>Don't depend on placeholder text as a label replacement. It can provide context as to what belongs in a form field, but once a user begins to type in it, that context is lost and unrecoverable for purposes of form review.</p>
 			</section>
 <!-- SLIDE 21: DEVELOPMENT PHASE: WAI-ARIA/Communicating State -->
 			<section>
-				<h2>The Development Phase: Communicating State</h2>
+				<h2>Development: Communicating State</h2>
+				<ul>
+					<li>Mark elements that are hidden within the interface with the <code class="hljs">aria-hidden="true"</code> attribute and toggle its state to <code class="hljs">false</code> with JavaScript when it changes.</li>
+					<li></li>
+				</ul>
 				<aside class="notes">
-					<!-- TODO: Add copy, notes -->
+					Screen readers read markup, not what's actively "visible" on the page. so
 				</aside>
 			</section>
-<!-- SLIDE 22: DEVELOPMENT PHASE: Speaking to Screenreaders -->
 			<section>
-				<h2>The Development Phase: Speaking to Screenreaders</h2>
-				<aside class="notes">
-					<!-- TODO: Add copy, notes -->
-				</aside>
+				<h2>Development: Communicating State</h2>
+				<ul>
+						<li>For users to keep the best grasp on context, make redirects, where they occur, as instantaneous as possible.</li>
+						<li>Only allow the page to refresh upon being triggered by the user to keep page transitions expected <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html" target="_blank">(View WCAG SC 3.2.5)</a></li>
 			</section>
 <!-- SLIDE 23: DEVELOPMENT PHASE: Speaking to Screenreaders (Text that's only screenread) -->
 			<section>
-				<h2>The Development Phase: Screenreaders and "Secret" Text</h2>
+				<h2>Development: Screenreaders and "Secret" Text</h2>
+				<p>For non-sighted users who need additional context provided for other users via images or CSS, provide content that will be picked up by screen readers but "invisible" to other users with this handy dandy utility class:</p>
+				<pre><code class="css">.visually-hidden { // For text we want read out for screen readers, but not visible generically.
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}</code></pre>
 				<aside class="notes">
-					<!-- TODO: Add copy, notes -->
-				</aside>
-			</section>
-<!-- SLIDE 24: DEVELOPMENT PHASE: Helping Keyboard Users -->
-			<section>
-				<h2>The Development Phase: Making Keyboard Use Painless</h2>
-				<aside class="notes">
-					<!-- TODO: Add copy, notes -->
-				</aside>
-			</section>
-<!-- SLIDE 25: DEVELOPMENT PHASE: Helping Keyboard Users // Skipping the Nav -->
-			<section>
-				<h2>The Development Phase: Making Keyboard Use Painless</h2>
-				<h3>Skipping the Nav</h3>
-				<aside class="notes">
-					<!-- TODO: Add copy, notes -->
-				</aside>
-			</section>
-<!-- SLIDE 26: DEVELOPMENT PHASE: Helping Keyboard Users // Not getting caught in collapsed menus -->
-			<section>
-				<h2>The Development Phase: Making Keyboard Use Painless</h2>
-				<h3>Avoiding Phantom Focus</h3>
-				<aside class="notes">
-					<!-- TODO: Add copy, notes -->
-				</aside>
-			</section>
-<!-- SLIDE 27: DEVELOPMENT PHASE: Loading Your Assets -->
-			<section>
-				<h2>The Development Phase: Asset Loading</h2>
-				<aside class="notes">
+
 					<!-- TODO: Add copy, notes -->
 				</aside>
 			</section>
 <!-- SLIDE 28: Wrap Up // Additional Tools and Resources -->
 			<section>
 				<h2>Additional Tools &amp; Resources</h2>
+				<ul>
+					<li><a href="https://github.com/GoogleChrome/accessibility-developer-tools">Google Accessibility Tools</a>: Handy library for accessibility-related testing</li>
+					<li><a href="http://khan.github.io/tota11y/">tota11y</a>: Khan Academy's plug-and-play accessibility auditing tool</li>
+					<li><a href="https://shop.smashingmagazine.com/products/inclusive-design-patterns"><em>Inclusive Design Patterns</em> by Heydon Pickering</a>: Handy book to explore and implement accessible (and generally inclusive) user experiences.</li>
+				</ul>
+				<aside class="notes">
+					<!-- TODO: Add copy, notes -->
+				</aside>
+			</section>
+			<section>
+				<h2>Additional Tools &amp; Resources</h2>
+				<ul>
+					<li><a href="http://webaim.org"></a>: Accessibility articles, checklists, and all-important screenreader operation asssistance.</li>
+					<li><a href="http://a11yproject.com/">The A11Y Project</a>: Handy explanations, patterns, and checklists for accessibility success criteria.</li>
+					<li><a href="https://pages.18f.gov/accessibility/">18F Accessibility Guide</a>: A nice outline of what and what not to do with your sites to keep them accessible.</li>
+				</ul>
 				<aside class="notes">
 					<!-- TODO: Add copy, notes -->
 				</aside>
@@ -410,6 +553,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+			  transition: 'none',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
