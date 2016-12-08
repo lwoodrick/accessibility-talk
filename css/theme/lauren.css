@@ -75,7 +75,7 @@ body {
 
 ::selection {
   color: #fafafa;
-  background: #def635;
+  background: #333;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -92,6 +92,11 @@ body .reveal .backgrounds .slide-background {
   background-position-y: bottom, bottom;
   background-size: 100vw 18px, auto auto;
   transition: none;
+}
+
+body .reveal .backgrounds .slide-background[data-background-hash] {
+	background-position: center;
+	background-size: auto 94vh;
 }
 
 body .reveal .backgrounds .slide-background[data-background-hash*="dark"] {
@@ -285,7 +290,7 @@ body .reveal .backgrounds .slide-background[data-background-hash*="title"] + .sl
 .reveal pre {
   display: block;
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
   text-align: left;
   font-size: 0.55em;
@@ -372,13 +377,11 @@ body .reveal .backgrounds .slide-background[data-background-hash*="title"] + .sl
   background-repeat: repeat-x;
   background-position: bottom 0.05em center;
   background-size: 100% 0.1em;
+}
 
 .reveal a:hover {
   color: #223299;
-  text-shadow: none;
-  border: none;
-  border-bottom: 3px solid #223299;
-   }
+  border: none;}
 
 .reveal .roll span:after {
   color: #fafafa;
@@ -412,19 +415,19 @@ body .reveal .backgrounds .slide-background[data-background-hash*="title"] + .sl
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #def635; }
+  border-right-color: #999; }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #def635; }
+  border-left-color: #999; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #def635; }
+  border-bottom-color: #999; }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #def635; }
+  border-top-color: #999; }
 
 .reveal .controls .navigate-left.enabled:hover {
   border-right-color: lighten(#def635, 40%); }
